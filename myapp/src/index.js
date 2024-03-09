@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import './index.css';
-import App6 from './App6';
+import Hoo from './Hoo';
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-   <App6/>
+   <Hoo/>
   </React.StrictMode>
 );
 
