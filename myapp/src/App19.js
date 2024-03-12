@@ -5,6 +5,7 @@ export default function App19() {
     <div>
         <App19child>
             <h1>Hello World</h1>
+            <p>Text of Paragraph</p>
         </App19child>
     </div>
   )
