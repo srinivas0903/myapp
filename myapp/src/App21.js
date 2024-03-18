@@ -1,28 +1,28 @@
 import { useReducer } from "react";
 import ReactDOM from "react-dom/client";
 
-function reducer(state, action) {
+function reducer(s, action) {
   switch (action.type) {
-    case "increment":
-      return { count: state.count + 1 };
+    case "increment": 
+      return { count: s.count + 1 };
     case "decrement":
-      return { count: state.count - 1 };
+      return { count: s.count - 1 };
     default:
-      return { count: state };
+      return { count: s };
   }
 }
 export default function App21() {
-  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  const [s, d] = useReducer(reducer, { count: 0 });
   function increment() {
-    dispatch({ type: "increment" });
+    d({ type: "increment" });
   }
   function decrement() {
-    dispatch({ type: "decrement" });
+    d({ type: "decrement" });
   }
   return (
     <>
       <input type="button" onClick={decrement} value="-"></input>
-      {state.count}
+      {s.count}
       <input type="button" onClick={increment} value="+"></input>
     </>
   );
