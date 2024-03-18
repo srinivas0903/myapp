@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
    {/* <App23/> */}
-   <App30/>
+   <App29/>
   </>
 );
 
