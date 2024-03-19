@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App23 from "./App23";
-import App29 from './App29';
+import App31 from './App31';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
    {/* <App23/> */}
-   <App29/>
+   <App31/>
   </>
 );
 

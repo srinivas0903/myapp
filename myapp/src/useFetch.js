@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 // export const useFetch = (url) => {
 //   const [data, setData] = useState([]);
@@ -11,13 +12,31 @@ import { useState, useEffect } from "react";
 // };
 //////////////
 
+// export const useFetch = (url) => {
+//     const [data, setData] = useState([]);
+
+//     const fetchData = async (url) => {
+//       const response = await fetch(url);
+//       const result = await response.json();
+//       setData(result)
+//     };
+
+//     useEffect(() => {
+//       fetchData(url);
+//     }, [url]);
+//     return [data];
+//   };
+
+
+
+//////////////////////
+
 export const useFetch = (url) => {
     const [data, setData] = useState([]);
 
     const fetchData = async (url) => {
-      const response = await fetch(url);
-      const result = await response.json();
-      setData(result)
+      const response = await axios.get(url);
+      setData(response.data)
     };
 
     useEffect(() => {
